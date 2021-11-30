@@ -1,0 +1,21 @@
+import Mixin from '@ember/object/mixin';
+declare const ResizeAwareMixin: Mixin<{
+    resizeDebouncedEventsEnabled: boolean;
+    resizeEventsEnabled: boolean;
+    screenHeight: import("@ember/object/computed").default<any, any>;
+    screenWidth: import("@ember/object/computed").default<any, any>;
+    _oldViewHeight: number | null;
+    _oldViewHeightDebounced: number | null;
+    _oldViewWidth: number | null;
+    _oldViewWidthDebounced: number | null;
+    resizeHeightSensitive: boolean;
+    resizeWidthSensitive: boolean;
+    didInsertElement(): void;
+    willDestroyElement(): void;
+    didResize(_width: number, _height: number, _evt: UIEvent): void;
+    debouncedDidResize(_width: number, _height: number, _evt: UIEvent): void;
+    _getComponentSize(this: any): any;
+    _handleResizeEvent(evt: UIEvent): void;
+    _handleDebouncedResizeEvent(evt: UIEvent): void;
+}, import("@ember/object").default>;
+export default ResizeAwareMixin;
