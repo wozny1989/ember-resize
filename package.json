@@ -23,8 +23,8 @@
     "@mike-north/js-lib-renovate-config": "1.2.0",
     "@mike-north/js-lib-semantic-release-config": "1.0.1",
     "@types/ember": "3.0.26",
-    "@types/ember__test-helpers": "0.7.6",
     "@types/ember-qunit": "3.4.4",
+    "@types/ember__test-helpers": "0.7.6",
     "@types/qunit": "2.5.3",
     "@types/rsvp": "4.0.2",
     "babel-eslint": "10.0.1",
@@ -54,7 +54,6 @@
     "loader.js": "4.7.0",
     "qunit-dom": "0.8.4",
     "semantic-release": "15.12.4",
-    "ts-node": "^10.4.0",
     "typescript": "3.2.2",
     "typescript-eslint-parser": "21.0.2"
   },
